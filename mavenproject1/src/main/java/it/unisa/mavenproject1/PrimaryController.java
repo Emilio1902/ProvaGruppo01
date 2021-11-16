@@ -10,5 +10,6 @@ public class PrimaryController {
         App.setRoot("secondary");
         System.out.println("Ciao");
         System.out.println("Emilio");
+        System.out.println("Mariassunta");
     }
 }
