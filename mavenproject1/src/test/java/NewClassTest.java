@@ -14,15 +14,17 @@ public class NewClassTest {
     
     @Test
     public void testAdd(){
+        NewClass nc = new NewClass();
         assertEquals(7, nc.add(3, 4));
         assertEquals(5, nc.add(10, -5));
         
     }
-    
+
+    @Test
     public void testDot(){
-       
-        assertEquals(7, nc.dot(3, 4));
-        assertEquals(5, nc.dot(10, -5));
+        NewClass a = new NewClass();
+        assertEquals(12, a.dot(3, 4));
+        assertEquals(-50, a.dot(10, -5));
         
     }
 }
