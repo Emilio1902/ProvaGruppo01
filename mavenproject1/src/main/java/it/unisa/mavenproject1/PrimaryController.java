@@ -11,5 +11,6 @@ public class PrimaryController {
         System.out.println("Ciao");
         System.out.println("Emilio");
         System.out.println("Mariassunta");
+        System.out.println("Diego");
     }
 }
