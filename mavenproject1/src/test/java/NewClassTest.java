@@ -3,6 +3,7 @@
  * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
  */
 import it.unisa.mavenproject1.NewClass;
+import org.junit.Before;
 import static org.junit.jupiter.api.Assertions.*;
 import org.junit.jupiter.api.Test;
 /**
@@ -12,9 +13,13 @@ import org.junit.jupiter.api.Test;
 public class NewClassTest {
     private NewClass nc;
     
+    @Before
+    public void setUp(){
+        nc = new NewClass();
+    }
+    
     @Test
     public void testAdd(){
-        NewClass nc = new NewClass();
         assertEquals(7, nc.add(3, 4));
         assertEquals(5, nc.add(10, -5));
         
@@ -22,9 +27,8 @@ public class NewClassTest {
 
     @Test
     public void testDot(){
-        NewClass a = new NewClass();
-        assertEquals(12, a.dot(3, 4));
-        assertEquals(-50, a.dot(10, -5));
+        assertEquals(12, nc.dot(3, 4));
+        assertEquals(-50, nc.dot(10, -5));
         
     }
 }
